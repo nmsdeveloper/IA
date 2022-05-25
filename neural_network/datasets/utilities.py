@@ -3,7 +3,7 @@ import numpy as np
 
 
 def load_data():
-    train_dataset = h5py.File('datasets/trainset.hdf5', "r")
+    train_dataset = h5py.File("neural_network\\datasets\\trainset.hdf5", "r")
     X_train = np.array(train_dataset["X_train"][:])  # your train set features
     y_train = np.array(train_dataset["Y_train"][:])  # your train set labels
 
