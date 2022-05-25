@@ -119,6 +119,6 @@ y_train = y_train.T
 X_train_reshape = X_train.reshape(-1, X_train.shape[-1]) / X_train.max()
 
 training_history = deep_neural_network(
-    X_train_reshape, y_train, learning_rate=0.1, n_iter=100)
+    X_train_reshape, y_train)
 
 print(training_history)
